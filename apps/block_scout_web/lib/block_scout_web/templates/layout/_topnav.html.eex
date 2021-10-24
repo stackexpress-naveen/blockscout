@@ -178,7 +178,7 @@
             </span>
             <%= subnetwork_title() %>
           </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">  
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="display:none;">  
             <a class="dropdown-item header division">Mainnets</a> 
             <%= for %{url: url, title: title} <- dropdown_head_main_nets() do %>  
               <a class="dropdown-item" href="<%= url %>"><%= title %></a>

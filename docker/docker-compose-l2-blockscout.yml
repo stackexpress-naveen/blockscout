@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  migrate-l2:
+  blockscout-l2:
     image: metis/blockscout
     # depends_on:
     #   - postgres

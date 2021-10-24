@@ -67,7 +67,7 @@
             <dd class="col-sm-9 col-lg-10" data-from-now="<%= @block.timestamp %>"></dd>
           </dl>
           <!-- # of Transactions -->
-          <dl class="row">
+          <dl class="row" style="display:none;">
             <dt class="col-sm-3 col-lg-2 text-muted">
               <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
               text: gettext("The number of transactions in the block.") %>
@@ -85,7 +85,7 @@
           </dl>
           <!-- Miner/Validator -->
           <%= if System.get_env("HIDE_BLOCK_MINER") !== "true" do %>
-            <dl class="row">
+            <dl class="row" style="display:none;">
               <dt class="col-sm-3 col-lg-2 text-muted">
                 <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
                 text: gettext("A block producer who successfully included the block onto the blockchain.") %>

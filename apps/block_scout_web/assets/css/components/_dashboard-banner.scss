@@ -46,7 +46,22 @@ $dashboard-banner-chart-axis-font-color-alt: #333;
   }
 }
 
+.dashboard-banner-splash {
+  text-align: center;
+
+  img {
+    vertical-align: middle;
+    margin: auto;
+    width: 350px;
+  }
+}
+
+.dashboard-banner-network-stats-item-1 {
+  display: none!important;
+}
+
 .dashboard-banner-network-graph {
+  display: none;
   flex-grow: 1;
   padding: 15px 0 0 0;
 

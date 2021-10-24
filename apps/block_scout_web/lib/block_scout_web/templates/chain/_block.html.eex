@@ -8,11 +8,11 @@
         ) %>
     <div class="tile-bottom-contents">
       <div class="tile-transactions">
-        <span class="mr-2"><%= gettext("%{count} Transactions", count: Enum.count(@block.transactions)) %></span>
+        <span class="mr-2" style="display:none;"><%= gettext("%{count} Transactions", count: Enum.count(@block.transactions)) %></span>
         <span class="text-nowrap" data-from-now="<%= @block.timestamp %>"> </span>
       </div>
       <%= if System.get_env("HIDE_BLOCK_MINER") !== "true" do %>
-        <div class="text-truncate">
+        <div class="text-truncate" style="display:none;">
           <%= gettext "Miner" %>
           <%= render BlockScoutWeb.AddressView,
             "_link.html",
