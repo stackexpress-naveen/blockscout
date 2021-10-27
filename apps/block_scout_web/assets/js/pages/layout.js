@@ -66,9 +66,9 @@ $( document ).ready(function() {
       if (addrList.length > 1 && addrList[1].getAttribute('data-address-hash') === '0x4200000000000000000000000000000000000011'){
         // get gas
         const gas = txList[j].querySelector('[data-test="token_link"]').parentNode.innerText
-        txList[j].closest('[data-test="token_transfer"]').querySelector('span[data-role="tx-fee"]').innerHTML = gas.split(' ')[0]
+        txList[j].closest('[data-selector="token-transfers-toggle"]').querySelector('span[data-role="tx-fee"]').innerHTML = gas.split(' ')[0]
 
-        const open = txList[j].closest('[data-test="token_transfer"]').querySelector('[data-selector="token-transfers-toggle"]').querySelector('[data-selector="token-transfer-open"]')
+        const open = txList[j].closest('[data-selector="token-transfers-toggle"]').querySelector('[data-selector="token-transfer-open"]')
         if (open) {
           open.click()
         }
