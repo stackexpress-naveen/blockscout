@@ -3,6 +3,7 @@ $primary: #153550;
 $secondary: #49a2ee;
 $tertiary: #4ad7a7;
 $additional-font: #89cae6;
+$metis-primary: #303042;
 
 // footer
 $footer-background-color: $primary;
@@ -22,9 +23,9 @@ $dashboard-stats-item-value-color: #fff; // stat values
 
 $dashboard-stats-item-border-color: $secondary; // stat border
 
-$dashboard-banner-gradient-start: $primary; // gradient begin
+$dashboard-banner-gradient-start: $metis-primary; // $primary; // gradient begin
 
-$dashboard-banner-gradient-end: lighten($primary, 5); // gradient end
+$dashboard-banner-gradient-end: lighten($metis-primary, 5); // lighten($primary, 5); // gradient end
 
 $dashboard-banner-network-plain-container-background-color: #1c476c; // stats bg
 
