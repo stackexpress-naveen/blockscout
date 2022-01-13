@@ -35,11 +35,11 @@ jobs:
       run: |
         echo "Building image for explorer"
         ls -la && pwd
-        docker-compose -f  ./docker/docker-compose-l2-blockscout.yml build -t blockscout-test .
+        docker-compose -f  ./docker/docker-compose-l2-blockscout.yml build 
 
         echo "Adding tag"
 
-        docker tag blockscout-test:latest 950087689901.dkr.ecr.us-east-1.amazonaws.com/blockscout-test:latest
+        docker tag metis/blockscout:latest 950087689901.dkr.ecr.us-east-1.amazonaws.com/blockscout-test:latest
 
         echo "pushing the build to ecr repo"
 
