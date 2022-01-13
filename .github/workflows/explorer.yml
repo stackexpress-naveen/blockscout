@@ -45,6 +45,6 @@ jobs:
 
         docker push 950087689901.dkr.ecr.us-east-1.amazonaws.com/blockscout-test:latest
 
-        echo "runing migrate"
+        #echo "runing migrate"
 
-        docker-compose -f ./docker/docker-compose-l2-migrate.yml up
+        #docker-compose -f ./docker/docker-compose-l2-migrate.yml up
