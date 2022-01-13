@@ -35,4 +35,4 @@ jobs:
       run: |
         echo "Building image for explorer"
         ls -la && pwd
-        docker build -f ./blockscout/docker/docker-compose-l2-blockscout.yml -t explorere-test ./blockscout
+        docker docker-compose -f  ./docker/docker-compose-l2-blockscout.yml build
