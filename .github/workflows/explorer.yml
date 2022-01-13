@@ -35,4 +35,16 @@ jobs:
       run: |
         echo "Building image for explorer"
         ls -la && pwd
-        docker-compose -f  ./docker/docker-compose-l2-blockscout.yml build
+        docker-compose -f  ./docker/docker-compose-l2-blockscout.yml build -t blockscout-test .
+
+        echo "Adding tag"
+
+        docker tag blockscout-test:latest 950087689901.dkr.ecr.us-east-1.amazonaws.com/blockscout-test:latest
+
+        echo "pushing the build to ecr repo"
+
+        docker push 950087689901.dkr.ecr.us-east-1.amazonaws.com/blockscout-test:latest
+
+        echo "runing migrate"
+
+        docker-compose -f ./docker/docker-compose-l2-migrate.yml up
