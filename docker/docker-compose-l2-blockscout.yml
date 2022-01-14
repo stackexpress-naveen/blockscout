@@ -9,9 +9,9 @@ services:
       context: ..
       dockerfile: ./docker/Dockerfile
     expose:
-      - 4000
+      - 80
     ports:
-      - 80:4000
+      - 80:80
     env_file:
       - envs/l2-488.env
     environment:
