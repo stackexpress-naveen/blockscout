@@ -45,5 +45,5 @@ RUN cd apps/explorer/ && \
 
 RUN mix phx.digest
 
-CMD mix do ecto.create, ecto.migrate
+CMD mix do ecto.create, ecto.migrate , mix phx.server
 #CMD [ mix do "ecto.create", "ecto.migrate"]
